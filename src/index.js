@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
 const App = () => {
@@ -11,3 +9,4 @@ const App = () => {
     </BrowserRouter>
   );
 };
+ReactDOM.render(<App />, document.getElementById('root'));

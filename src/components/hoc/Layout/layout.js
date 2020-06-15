@@ -1,9 +1,29 @@
 import React, { Component } from 'react';
 import './layout.css';
+import Header from '../../header/header';
+
 class Layout extends Component {
-  state = {};
+  state = {
+    showNav: false,
+  };
+
+  toggleSideNav = (action) => {
+    this.setState({
+      showNav: action,
+    });
+  };
+
   render() {
-    return <div>{this.props.children}</div>;
+    return (
+      <div>
+        <Header
+          showNav={this.state.showNav}
+          onHideNav={() => this.toggleSideNav(false)}
+          onOpenNav={() => this.toggleSideNav(true)}
+        />
+        {this.props.children}
+      </div>
+    );
   }
 }
 
