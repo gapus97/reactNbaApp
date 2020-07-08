@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../articles.css';
 
 const teamNfo = (props) => {
+  console.log(JSON.stringify(props) + 'dsjasdlkjkaskdjhkas');
   return (
     <div className={styles.articleTeamHeader}>
       <div

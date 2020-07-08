@@ -39,7 +39,6 @@ class VideosList extends Component {
     let template = null;
     switch (this.props.type) {
       case 'card':
-        console.log(this.state.teams + 'should have an array of teams');
         template = (
           <VideosListTemplate
             data={this.state.videos}
